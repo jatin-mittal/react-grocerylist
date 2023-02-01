@@ -7,7 +7,7 @@ import { useState } from "react";
 import Search from "./Search";
 
 function App() {
-  const [items, setItem] = useState(JSON.parse(localStorage.getItem("items")));
+  const [items, setItem] = useState(JSON.parse(localStorage.getItem("items"))  || [] );
 
   const [newItem, setNewItem] = useState("");
 
